@@ -1,5 +1,5 @@
 const List = ({ clickHandler }) => {
-    const cities = ['Helsinki', 'Tampere', 'Oulu', 'Turku', 'Rovaniemi']
+    const cities = ['Helsinki', 'Tampere', 'Oulu', 'Turku', 'Rovaniemi', 'Kuopio']
     const buttons = cities.map(city=><button onClick={clickHandler} key={city} data-name={city}>{city}</button>) 
     return (
         <ul>
