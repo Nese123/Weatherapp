@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import CityInput from "./components/CityInput";
 import List from "./components/List";
 import Weather from "./components/Weather";
+import { Navbar } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
 
@@ -46,6 +48,11 @@ const App = () => {
 
   return (
     <div>
+      <Navbar bg="dark" variant="dark">
+        <Navbar.Brand>
+          Sää
+        </Navbar.Brand>
+      </Navbar>
       <CityInput setInput={setInput} input={input} inputSearch={inputSearch} />
       <List clickHandler={cityClick} />
       <Weather wData={coData} forecast={forecast}/>
